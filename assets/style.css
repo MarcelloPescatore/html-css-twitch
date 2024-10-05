@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", system-ui;
 }
 
 body{
@@ -14,17 +15,18 @@ body{
 
 /* color */
 :root{
-    -bg-secondary: #18181A;
-    -bg-primary: #0E0E0F;
-    -bg-tertiary: #2F2F35;
+    --bg-secondary: #18181A;
+    --bg-primary: #0E0E0F;
+    --bg-tertiary: #1F1F23;
+    --bg-quaternary: #2F2F35;
 
     /* text */
-    -cl_txt-primary: #EFEFF1;
-    -cl_txt-secondary: #ADADB8;
-    -cl_txt-hover: #CFAFFE;
+    --cl_txt-primary: #EFEFF1;
+    --cl_txt-secondary: #ADADB8;
+    --cl_txt-hover: #CFAFFE;
     
     /* icon */
-    -cl-icon: #FDFDFF;
+    --cl-icon: #FDFDFF;
 }
 
 /* text style */
@@ -32,6 +34,7 @@ body{
     font-size: 18px;
     line-height: auto;
     font-weight: 600;
+    color: var(--cl_txt-primary);
 }
 
 .txt-secondary{
@@ -45,4 +48,46 @@ body{
     line-height: auto;
     font-weight: 400;
 }
+
+a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.circle{
+    border-radius: 50%;
+}
 /* #endregion assets */
+
+/* #region header */
+
+.fa-twitch{
+    color: var(--cl_txt-hover);
+}
+
+header {
+    background-color: var(--bg-secondary);
+    height: 56px;
+}
+
+i {
+    color: var(--cl-icon);
+}
+
+.cta_boost{
+    background-color: var(--bg-quaternary);
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+#cta_txt_boost{
+    color: var(--cl_txt-primary);
+}
+
+.account{
+    background-color: var(--cl_txt-hover);
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+/* #endregion header */
