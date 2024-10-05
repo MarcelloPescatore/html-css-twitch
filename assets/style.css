@@ -27,4 +27,22 @@ body{
     -cl-icon: #FDFDFF;
 }
 
+/* text style */
+.txt-primary{
+    font-size: 18px;
+    line-height: auto;
+    font-weight: 600;
+}
+
+.txt-secondary{
+    font-size: 14px;
+    line-height: auto;
+    font-weight: 600;
+}
+
+.txt-tertiary{
+    font-size: 13px;
+    line-height: auto;
+    font-weight: 400;
+}
 /* #endregion assets */
