@@ -22,14 +22,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <i class="fa-brands fa-twitch"></i>
               </a>
               <!-- /icon header -->
 
-              <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+
+              <div class="d-flex col-12 align-items-center">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
                   <li class="nav-item">
                     <a class="txt-primary" aria-current="page" href="#">Seguito</a>
@@ -37,16 +38,21 @@
                   <li class="nav-item">
                     <a class="txt-primary" href="#">Sfoglia</a>
                   </li>
+                  <li class="nav-item">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </li>
                 </ul>
                 <!-- /left menù -->
 
-                <form class="d-flex col-4" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex col-3" role="search">
+                  <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
                 </form>
                 <!-- /middle search bar -->
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4 justify-content-end gap-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4 justify-content-end align-items-center gap-3">
                     <li class="nav-item">
                         <i class="fa-solid fa-crown"></i>
                     </li>
@@ -70,7 +76,7 @@
                     <li class="nav-item circle account">
                         <i class="fa-solid fa-user"></i>
                     </li>
-                  </ul>
+                </ul>
                 <!-- /left menù -->
               </div>
             </div>
