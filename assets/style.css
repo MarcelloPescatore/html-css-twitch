@@ -15,7 +15,7 @@ body{
 
 /* color */
 :root{
-    --bg-secondary: #18181A;
+    --bg-secondary: #18181b;
     --bg-primary: #0E0E0F;
     --bg-tertiary: #1F1F23;
     --bg-quaternary: #2F2F35;
@@ -91,3 +91,19 @@ i {
     text-align: center;
 }
 /* #endregion header */
+
+/* #region main */
+
+.side_menu{
+    background-color: var(--bg-tertiary);
+    width: 440px;
+    height: 100%;
+}
+
+.content{
+    width: calc(100% - 440px);
+    height: 100%;
+    background-color: var(--bg-primary);
+}
+
+/* #endregion main */
