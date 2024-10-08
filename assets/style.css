@@ -68,6 +68,10 @@ a {
 header {
     background-color: var(--bg-secondary);
     height: 56px;
+
+    nav{
+        height: 100%;
+    }
 }
 
 i {
@@ -93,15 +97,18 @@ i {
 /* #endregion header */
 
 /* #region main */
+main{
+    height: calc(100% - 56px);
+}
 
 .side_menu{
     background-color: var(--bg-tertiary);
-    width: 440px;
+    width: 360px;
     height: 100%;
 }
 
 .content{
-    width: calc(100% - 440px);
+    width: calc(100% - 360px);
     height: 100%;
     background-color: var(--bg-primary);
 }
